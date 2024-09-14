@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 400px;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            text-align: center;
+            padding-top: 250px;
+        }
+        h1{
+            margin-bottom: 0;
+            padding: 10px;
+            color: green;
+            text-align: center;
+            font-weight: bold;
+            margin: 0;
+            font-size: 50px;
+            margin-bottom: 100px;
+    
+        }
+        .search-button {
+    float: right;
+    margin-top: -70px;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box {
+    border: 1px solid #ccc;
+    padding: 8px 26px;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.search-button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button-icon svg {
+    fill: #ccc;
+    width: 20px;
+    height: 20px;
+}
+
+        .product-details {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            width: 100%;
+        }
+
+        .product-details .product-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .product-details .product-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+       
+        .product-details h2 span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .product-details p {
+            color: #888;
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+        .price{
+            font-size: 2.2rem;
+            color: #444;
+            padding-bottom: .5rem;
+        }
+        .price span{
+            font-size: 1.5rem;
+            color: #665;
+            text-decoration: line-through;
+        }
+
+        .product-details .author {
+            font-weight: bold;
+        }
+
+        .product-details .category {
+            color: #444;
+        }
+
+        .product-details .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .product-details .sub-title {
+            font-size: 16px;
+        }
+
+        .product-details .add-to-cart-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 26px;
+            width: 150px;
+            height: 40px;
+            background-color: #27ae60;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-left: 150px;
+        }
+
+        .balance {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+        }
+
+        .balance .balance-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .balance .balance-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Merchandise</h1>
+        <div class="search-button">
+            <input type="search" class="search-box" placeholder="Search">
+            <button class="search-button-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path class="heroicon-ui" d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-7-7a1 1 0 0 1 0-1.4l7-7a1 1 0 1 1 1.4 1.4l-5.4 5.39a1 1 0 0 1-1.4 0ZM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm0-2a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="product-details">
+            <img src="./image/product2.jpg" alt="Product Image" class="product-image">
+            <div class="product-info">
+                <h2><span>Harry potter T-shirt</span> </h2>
+                <p>Showcase your love for the magical world with our Harry Potter T-shirt!<br><br></p>
+                <div class="price">Rs.1500<span>Rs.1800</span></div>
+                <p><br></p>
+                <a href="#" class="add-to-cart-button">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-details">
+            <img src="./image/product4.jpg" alt="Product Image" class="product-image">
+            <div class="product-info">
+                <h2>Sherlock T-shirt</h2>
+                <p>Elevate your style with our Sherlock T-shirt! Sleek and mysterious!</p>
+                <div class="price">Rs.1500<span>Rs.1800</span></div>
+                <p><br></p>
+                <a href="#" class="add-to-cart-button">Add to Cart</a>
+                </div>
+        </div>
+        <div class="product-details">
+            <img src="./image/product5.jpg" alt="Product Image" class="product-image">
+            <div class="product-info">
+                <h2>Harry Potter Quote Mug</h2>
+                <p>Sip your magic with our Harry Potter quote mug! </p>
+                <div class="price">Rs.1500<span>Rs.1800</span></div>
+                <p><br></p>
+                <a href="#" class="add-to-cart-button">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-details">
+            <img src="./image/product6.jpg" alt="Product Image" class="product-image">
+            <div class="product-info">
+                <h2>Hogwarts T-shirt</h2>
+                <p>Wear your Hogwarts pride with style!</p>
+                <div class="price">Rs.1500<span>Rs.1800</span></div>
+                <p><br></p>
+                <a href="#" class="add-to-cart-button">Add to Cart</a>
+            </div>
+        </div>
+        <div class="product-details">
+            <img src="./image/product1.jpg" alt="Product Image" class="product-image">
+            <div class="product-info">
+                <h2>Harry Mug</h2>
+                <p>Elevate your tea time with a touch of wizardry!</p></p>
+                <div class="price">Rs.1500<span>Rs.1800</span></div>
+                <p><br></p>
+                <a href="#" class="add-to-cart-button">Add to Cart</a>
+            </div>
+        </div>
+        </div>
+        </body>
+        </html>

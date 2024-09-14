@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - E-commerce</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .profile-container {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .left-column,
+        .right-column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .profile-picture {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+
+        .profile-picture img {
+            width: 100%;
+            height: auto;
+        }
+
+        .user-details,
+        .address-details {
+            margin-top: 20px;
+        }
+
+        .address-details label {
+            display: inline-block;
+            width: 120px;
+            font-weight: bold;
+        }
+
+        .address-details input {
+            width: calc(100% - 130px);
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>User Profile</h1>
+    </header>
+
+    <div class="profile-container">
+        <div class="left-column">
+            <div class="profile-picture">
+                <img src="./image/review 1.jpg" alt="Profile Picture">
+            </div>
+
+           
+        </div>
+
+        <div class="right-column">
+            <div class="address-details">
+                <h2>Address</h2>
+                <label for="FName">Firstname:</label>
+                <input type="text" id="Fname" placeholder="Enter the text">
+
+                <label for="Lname">LastName:</label>
+                <input type="text" id="Lname" placeholder="Enter the text">
+
+                <label for="doorNo">Door No:</label>
+                <input type="text" id="doorNo" placeholder="Enter the text">
+
+                <label for="street">Street:</label>
+                <input type="text" id="street" placeholder="Enter the text">
+
+                <label for="village">Village:</label>
+                <input type="text" id="village" placeholder="Enter the text">
+
+                <label for="district">District:</label>
+                <input type="text" id="district" placeholder="Enter the text">
+
+                <label for="State">State:</label>
+                <input type="text" id="state" placeholder="Enter the text">
+
+                <label for="Pincode">PinCode:</label>
+                <input type="text" id="pincode" placeholder="Enter the text">
+
+                <label for="phone">Phone No:</label>
+                <input type="text" id="phone" placeholder="Enter the text">
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" placeholder="Enter the text">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
